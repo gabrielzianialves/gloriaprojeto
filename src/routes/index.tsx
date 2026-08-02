@@ -8,7 +8,6 @@ import {
   Image as ImageIcon,
   Linkedin,
   Mail,
-  Play,
   ShieldCheck,
   Smile,
   Sparkles,
@@ -17,7 +16,7 @@ import {
 
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import heroAsset from "@/assets/hero.png.asset.json";
+import heroAsset from "@/assets/hero-v2.png.asset.json";
 import logoAsset from "@/assets/logo.png.asset.json";
 import gloriaAsset from "@/assets/gloria.jpeg.asset.json";
 
@@ -94,7 +93,7 @@ function Index() {
           alt="Os quatro integrantes do Projeto Glória juntos, sorrindo em frente a uma parede de tijolos"
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(0.229_0.079_279.5/0.55)_0%,oklch(0.229_0.079_279.5/0.3)_38%,oklch(0.229_0.079_279.5/0.9)_78%,oklch(0.229_0.079_279.5/0.98)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(0.229_0.079_279.5/0.5)_0%,oklch(0.229_0.079_279.5/0.28)_30%,oklch(0.229_0.079_279.5/0.72)_50%,oklch(0.229_0.079_279.5/0.95)_62%,oklch(0.229_0.079_279.5/1)_74%,oklch(0.229_0.079_279.5/1)_100%)]" />
 
         <div className="relative mx-auto flex min-h-[92vh] w-full max-w-6xl flex-col items-center justify-between px-6 py-10 md:px-10">
           <Reveal className="flex w-full justify-center">
@@ -197,16 +196,14 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,0.8fr)_1fr] lg:gap-20">
           <Reveal className="mx-auto w-full max-w-[340px]">
             <div className="relative aspect-[9/16] overflow-hidden rounded-[1.75rem] border border-border bg-secondary shadow-lift">
-              {/* Substitua este bloco pelo vídeo vertical (9:16) da voluntária Glória */}
-              <div className="flex h-full w-full flex-col items-center justify-center gap-4 p-8 text-center text-secondary-foreground">
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-cream/15">
-                  <Play className="h-7 w-7" />
-                </span>
-                <p className="text-sm font-semibold">Vídeo de relato da Glória</p>
-                <p className="text-xs opacity-70">
-                  Espaço reservado para o vídeo vertical (9:16)
-                </p>
-              </div>
+              <iframe
+                src="https://www.youtube.com/embed/QCEHQC705Fk"
+                title="Vídeo de relato da voluntária Glória"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full border-0"
+              />
             </div>
           </Reveal>
 

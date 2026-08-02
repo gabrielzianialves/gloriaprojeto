@@ -197,16 +197,14 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,0.8fr)_1fr] lg:gap-20">
           <Reveal className="mx-auto w-full max-w-[340px]">
             <div className="relative aspect-[9/16] overflow-hidden rounded-[1.75rem] border border-border bg-secondary shadow-lift">
-              {/* Substitua este bloco pelo vídeo vertical (9:16) da voluntária Glória */}
-              <div className="flex h-full w-full flex-col items-center justify-center gap-4 p-8 text-center text-secondary-foreground">
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-cream/15">
-                  <Play className="h-7 w-7" />
-                </span>
-                <p className="text-sm font-semibold">Vídeo de relato da Glória</p>
-                <p className="text-xs opacity-70">
-                  Espaço reservado para o vídeo vertical (9:16)
-                </p>
-              </div>
+              <iframe
+                src="https://www.youtube.com/embed/QCEHQC705Fk"
+                title="Vídeo de relato da voluntária Glória"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full border-0"
+              />
             </div>
           </Reveal>
 

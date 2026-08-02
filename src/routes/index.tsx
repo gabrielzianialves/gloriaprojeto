@@ -92,9 +92,9 @@ function Index() {
         <img
           src={heroAsset.url}
           alt="Os quatro integrantes do Projeto Glória juntos, sorrindo em frente a uma parede de tijolos"
-          className="absolute inset-0 h-full w-full object-cover object-top opacity-60"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(0.229_0.079_279.5/0.75)_0%,oklch(0.229_0.079_279.5/0.55)_45%,oklch(0.229_0.079_279.5/0.96)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(0.229_0.079_279.5/0.55)_0%,oklch(0.229_0.079_279.5/0.3)_38%,oklch(0.229_0.079_279.5/0.9)_78%,oklch(0.229_0.079_279.5/0.98)_100%)]" />
 
         <div className="relative mx-auto flex min-h-[92vh] w-full max-w-6xl flex-col justify-between px-6 py-10 md:px-10">
           <Reveal>

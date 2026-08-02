@@ -16,7 +16,8 @@ import {
 
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import heroAsset from "@/assets/hero-v2.png.asset.json";
+import heroDesktopAsset from "@/assets/hero-desktop.png.asset.json";
+import heroMobileAsset from "@/assets/hero-mobile.png.asset.json";
 import logoAsset from "@/assets/logo.png.asset.json";
 import gloriaAsset from "@/assets/gloria.jpeg.asset.json";
 
@@ -88,11 +89,15 @@ function Index() {
     <main className="overflow-x-hidden bg-background text-foreground">
       {/* HERO */}
       <section className="relative isolate min-h-[92vh] surface-deep">
-        <img
-          src={heroAsset.url}
-          alt="Os quatro integrantes do Projeto Glória juntos, sorrindo em frente a uma parede de tijolos"
-          className="absolute inset-0 h-full w-full object-cover object-top"
-        />
+        <picture>
+          <source media="(max-width: 767px)" srcSet={heroMobileAsset.url} />
+          <source media="(min-width: 768px)" srcSet={heroDesktopAsset.url} />
+          <img
+            src={heroDesktopAsset.url}
+            alt="Os quatro integrantes do Projeto Glória juntos, sorrindo em frente a uma parede de tijolos"
+            className="absolute inset-0 h-full w-full object-cover object-top"
+          />
+        </picture>
         <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(0.229_0.079_279.5/0.5)_0%,oklch(0.229_0.079_279.5/0.28)_30%,oklch(0.229_0.079_279.5/0.72)_50%,oklch(0.229_0.079_279.5/0.95)_62%,oklch(0.229_0.079_279.5/1)_74%,oklch(0.229_0.079_279.5/1)_100%)]" />
 
         <div className="relative mx-auto flex min-h-[92vh] w-full max-w-6xl flex-col items-center justify-between px-6 py-10 md:px-10">

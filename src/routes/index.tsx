@@ -8,7 +8,6 @@ import {
   Image as ImageIcon,
   Linkedin,
   Mail,
-  Play,
   ShieldCheck,
   Smile,
   Sparkles,

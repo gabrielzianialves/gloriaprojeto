@@ -224,7 +224,7 @@ function Index() {
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               O vídeo mantém a experiência dela no centro do desenvolvimento, para que a tecnologia
-              responda a uma necessidade real — e não a uma suposição.
+              responda a uma necessidade real, e não a uma suposição.
             </p>
             <p className="mt-8 rounded-2xl border border-border bg-card p-5 text-sm leading-relaxed text-muted-foreground shadow-soft">
               O uso do nome e da imagem da voluntária Glória neste projeto foi autorizado por meio de

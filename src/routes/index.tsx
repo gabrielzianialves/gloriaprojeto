@@ -96,8 +96,8 @@ function Index() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(0.229_0.079_279.5/0.55)_0%,oklch(0.229_0.079_279.5/0.3)_38%,oklch(0.229_0.079_279.5/0.9)_78%,oklch(0.229_0.079_279.5/0.98)_100%)]" />
 
-        <div className="relative mx-auto flex min-h-[92vh] w-full max-w-6xl flex-col justify-between px-6 py-10 md:px-10">
-          <Reveal>
+        <div className="relative mx-auto flex min-h-[92vh] w-full max-w-6xl flex-col items-center justify-between px-6 py-10 md:px-10">
+          <Reveal className="flex w-full justify-center">
             <img
               src={logoAsset.url}
               alt="Glória — Tecnologia Assistiva Alimentar"
@@ -105,7 +105,7 @@ function Index() {
             />
           </Reveal>
 
-          <div className="max-w-3xl pb-16 pt-24">
+          <div className="flex max-w-3xl flex-col items-center pb-12 pt-[38vh] text-center md:pt-[42vh]">
             <Reveal delay={80}>
               <SectionLabel>Tecnologia assistiva em desenvolvimento</SectionLabel>
             </Reveal>
@@ -117,7 +117,7 @@ function Index() {
               </h1>
             </Reveal>
             <Reveal delay={240}>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cream/85 md:text-xl">
+              <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-cream/85 md:text-xl">
                 Uma solução tecnológica desenvolvida para transformar a forma como pessoas com
                 limitações motoras vivenciam a alimentação.
               </p>

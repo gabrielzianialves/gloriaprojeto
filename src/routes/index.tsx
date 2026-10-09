@@ -258,12 +258,12 @@ function Index() {
 
           <div className="mt-14 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <Reveal delay={100}>
-              {/* Espaço reservado para as imagens do dispositivo */}
-              <div className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-dashed border-cream/30 bg-ink/40 p-8 text-center">
-                <ImageIcon className="h-8 w-8 opacity-70" />
-                <p className="text-sm font-semibold">Imagens do dispositivo</p>
-                <p className="text-xs opacity-70">Espaço reservado para as fotos do protótipo</p>
-              </div>
+              <img
+                src={dispositivoAsset.url}
+                alt="Protótipo 3D do dispositivo assistivo adaptado ao antebraço, desenvolvido pelo Projeto Glória"
+                loading="lazy"
+                className="aspect-[4/3] w-full rounded-[1.75rem] object-cover shadow-lift"
+              />
             </Reveal>
 
             <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
@@ -319,11 +319,12 @@ function Index() {
               {/* Mockup de celular — insira aqui a imagem da interface do app */}
               <div className="w-[280px] rounded-[2.5rem] border-[10px] border-ink bg-ink p-1 shadow-lift sm:w-[300px]">
                 <div className="relative aspect-[9/19.5] overflow-hidden rounded-[2rem] bg-muted">
-                  <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center text-muted-foreground">
-                    <ImageIcon className="h-8 w-8 opacity-60" />
-                    <p className="text-sm font-semibold text-foreground">Interface do aplicativo</p>
-                    <p className="text-xs">Espaço reservado para o mockup da tela inicial</p>
-                  </div>
+                  <img
+                    src={appAsset.url}
+                    alt="Tela inicial do aplicativo do Projeto Glória, com status de conexão, bateria, calibração e botão de calibrar dispositivo"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -368,8 +369,10 @@ function Index() {
               <Reveal as="li" key={p.name} delay={100 + i * 110}>
                 <div className="flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-border bg-card shadow-soft">
                   {/* Espaço reservado para a foto do integrante */}
-                  <div className="flex aspect-[4/3] items-center justify-center bg-muted text-muted-foreground">
-                    <ImageIcon className="h-8 w-8 opacity-60" />
+                  <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-accent/80 to-accent text-accent-foreground">
+                    <span className="text-5xl font-bold tracking-wide" aria-hidden="true">
+                      {p.name.split(" ").filter((w) => w.length > 2).slice(0, 2).map((w) => w[0]).join("")}
+                    </span>
                   </div>
                   <div className="flex flex-1 flex-col justify-between gap-4 p-6">
                     <h3 className="text-lg font-bold leading-snug">{p.name}</h3>
@@ -381,7 +384,7 @@ function Index() {
                       aria-label={`Perfil do LinkedIn de ${p.name}`}
                     >
                       <Linkedin className="h-4 w-4" />
-                      LinkedIn [LINK DO PERFIL]
+                      LinkedIn
                     </a>
                   </div>
                 </div>
@@ -456,9 +459,16 @@ function Index() {
                 {PROJECT_EMAIL}
               </a>
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Redes sociais: [LINKS DAS REDES SOCIAIS]
-            </p>
+            <a
+              href="https://www.instagram.com/gloriaprojeto"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-flex items-center gap-2 text-sm hover:underline"
+              aria-label="Instagram do Projeto Glória"
+            >
+              <Instagram className="h-4 w-4 text-accent" />
+              @gloriaprojeto
+            </a>
           </div>
         </div>
         <div className="mx-auto mt-12 max-w-6xl border-t border-border pt-6 text-sm text-muted-foreground">

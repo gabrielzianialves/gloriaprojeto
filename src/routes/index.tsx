@@ -5,7 +5,7 @@ import {
   Gauge,
   HandHeart,
   HeartPulse,
-  Image as ImageIcon,
+  Instagram,
   Linkedin,
   Mail,
   ShieldCheck,
@@ -20,6 +20,8 @@ import heroDesktopAsset from "@/assets/hero-desktop.png.asset.json";
 import heroMobileAsset from "@/assets/hero-mobile.png.asset.json";
 import logoAsset from "@/assets/logo.png.asset.json";
 import gloriaAsset from "@/assets/gloria.jpeg.asset.json";
+import dispositivoAsset from "@/assets/dispositivo.jpg.asset.json";
+import appAsset from "@/assets/app.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -43,7 +45,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const PROJECT_EMAIL = "[EMAIL DO PROJETO]";
+const PROJECT_EMAIL = "gloriaprojeto2026@gmail.com";
 
 const objetivos = [
   {
@@ -64,9 +66,9 @@ const objetivos = [
 ];
 
 const equipe = [
-  { name: "Gabriel Ziani Alves", linkedin: "#" },
-  { name: "Pedro Marinho R. C. Corrêa", linkedin: "#" },
-  { name: "Vitor Paiva Nunes de Paula", linkedin: "#" },
+  { name: "Gabriel Ziani Alves", linkedin: "https://www.linkedin.com/in/gabriel-ziani-alves-453b4a2b7/" },
+  { name: "Pedro Marinho R. C. Corrêa", linkedin: "https://www.linkedin.com/in/pedro-marinho-corr%C3%AAa/" },
+  { name: "Vitor Paiva Nunes de Paula", linkedin: "https://www.linkedin.com/in/vitor-de-paula-622353359/" },
 ];
 
 const propostaDestaques = [
